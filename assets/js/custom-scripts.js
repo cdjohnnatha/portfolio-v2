@@ -379,19 +379,20 @@
           var name = $("#name").val();
           var email = $("#email").val();
           var message = $("#message").val();
-          $.ajax({
-              type: "POST",
-              url: "process.php",
-              data: "name=" + name + "&email=" + email + "&message=" + message,
-              success : function(text){
-                  if (text == "success"){
-                      formSuccess();
-                    } else {
-                      formError();
-                      submitMSG(false,text);
-                    }
-                }
-            });
+          window.open(`mailto:cdjohnnatha@gmail.com?subject=Portfolio contact from ${name}&body=${message}&from=${email}`);
+          // $.ajax({
+          //     type: "POST",
+          //     url: "process.php",
+          //     data: "name=" + name + "&email=" + email + "&message=" + message,
+          //     success : function(text){
+          //         if (text == "success"){
+          //             formSuccess();
+          //           } else {
+          //             formError();
+          //             submitMSG(false,text);
+          //           }
+          //       }
+          //   });
         }
         function formSuccess(){
             $("#contactForm")[0].reset();

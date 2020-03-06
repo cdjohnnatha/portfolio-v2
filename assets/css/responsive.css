@@ -81,7 +81,7 @@
     z-index: 990;
     margin-top: 0px;
     padding: 0;
-    background-color: #0bceaf;
+    background-color: #2196F3;
     transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
     -o-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
     -ms-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
@@ -196,7 +196,7 @@
     display: block;
   }
   .mh-xs-mobile-nav .navbar-header .navbar-toggler .icon-bar {
-    background-color: #0bceaf;
+    background-color: #2196F3;
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
     -webkit-font-smoothing: antialiased;
@@ -229,7 +229,7 @@
     z-index: 990;
     margin-top: 0px;
     padding: 0;
-    background-color: #0bceaf;
+    background-color: #2196F3;
     transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
     -o-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
     -ms-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
