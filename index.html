@@ -524,7 +524,7 @@
               </div>
               <div class="grid-item col-md-4 col-sm-6 col-xs-12 node">
                 <figure>
-                  <img src="assets/images/assista/assista-sm.png" alt="Coming soon">
+                  <img src="assets/images/assista/assista-sm.png" alt="Assista tecnology image">
                   <figcaption class="fig-caption">
                     <i class="fa fa-search"></i>
                     <h5 class="title">Assista Technology</h5>
@@ -567,6 +567,31 @@
                   </figcaption>
                 </figure>
               </div>
+              
+              <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding node">
+                <figure>
+                  <img src="assets/images/video-synch/Qrcode.png" alt="img04">
+                  <figcaption class="fig-caption">
+                    <i class="fa fa-search"></i>
+                    <h5 class="title">Video synch</h5>
+                    <span class="sub-title">Video synchronization solution for SAGE-2</span>
+                    <a href="assets/images/video-synch/VideoWall.png" data-fancybox data-src="#video-synch-mh"></a>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding ruby">
+                <figure>
+                  <img src="assets/images/pamin/pamin.jpg" alt="img04">
+                  <figcaption class="fig-caption">
+                    <i class="fa fa-search"></i>
+                    <h5 class="title">PAMIN</h5>
+                    <span class="sub-title">Patrimony, Memory and Interactivity</span>
+                    <a href="assets/images/pamin/pamin.jpg" data-fancybox data-src="#pamin-mh"></a>
+                  </figcaption>
+                </figure>
+              </div>
+
               <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui mockup">
                 <figure>
                   <img src="assets/images/coming-soon.jpg" alt="img04">
@@ -577,29 +602,9 @@
                   </figcaption>
                 </figure>
               </div>
-            <!-- 
-              <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
-                <figure>
-                  <img src="assets/images/portfolio/g6.png" alt="img04">
-                  <figcaption class="fig-caption">
-                    <i class="fa fa-search"></i>
-                    <h5 class="title">Creative Design</h5>
-                    <span class="sub-title">Photograpy</span>
-                    <a href="assets/images/portfolio/g6.png" data-fancybox data-src="#mh"></a>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
-                <figure>
-                  <img src="assets/images/portfolio/g8.png" alt="img04">
-                  <figcaption class="fig-caption">
-                    <i class="fa fa-search"></i>
-                    <h5 class="title">Creative Design</h5>
-                    <span class="sub-title">Photograpy</span>
-                    <a href="assets/images/portfolio/g8.png" data-fancybox data-src="#mh"></a>
-                  </figcaption>
-                </figure>
-              </div>
+              
+              
+              <!--
               <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui">
                 <figure>
                   <img src="assets/images/portfolio/g9.png" alt="img04">
@@ -978,6 +983,100 @@
               <p>Piece of code without using houston-errors.</p>
               <img src="assets/images/houston/using-houston.png" alt="" class="img-fluid">
               <p>Piece of code using houston-errors.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SAGE2 -->
+    <div class="mh-portfolio-modal" id="video-synch-mh">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>Video Synch</h2>
+            <p>
+              Although <a href="https://sage2.sagecommons.org/tag/wall/">SAGE2</a> is a stable collaborative workplace it has been a challenge syn-chronize 
+              dynamic applications among a screens in a video wall. 
+              The Fogo Player used in SAGE2 was developed at LAViD(Digital Laboratory of Video Applications)
+              using webtools such as Javascript and HTML5 which had problems with media synchronization caused
+              by different initialization times from browsers. Therefore this work proposal is to use techniques
+              like adaptive media synchronization to compensate the browsers video playback start delay,
+              in order to makes a better synchronization in video  applications to present a syncrhonization improvements
+              on SAGE2 using video wall. 
+            </p>
+            <p>
+              The implementation it was pretty much considering a video-wall with 4 screens turning into a 4k image quality,
+              where each browser runs their own js script on SAGE2 which turns into their on synch mode. So it was
+              developed am external node.js application to collect the initialization time send from SAGE-2 application
+              and there identify each screen and the most delayed, after the most delayed identification it was sending back
+              the difference time which should be applied in each screen making the video syncrhonized. It was not possible
+              to consider just an eye to confirm that the video it was syncrhonized because of moviment perception and moviment
+              notion so to validate that it was using a video where each frame it has a QR-code with the frame count and 
+              an external application to verify if the 4 frames it was accordling their counts. Furthermore it would be
+              possible to fix an issue from <a href="https://sage2.sagecommons.org/tag/wall/">SAGE2</a> application and affirm the dynamic application was synch.
+            </p>
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Node.js</li></span>
+                <li><span>Express</li></span>
+                <li><span>Jest.js</li></span>
+                <li><span>Mocha</li></span>
+                <li><span>Chai.js</li></span>
+                <li><span><a href="https://sage2.sagecommons.org/tag/wall/">SAGE2</a></li></span>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <img src="assets/images/video-synch/vlcPrint.png" alt="portal docs website" class="img-fluid">
+              <p>Original video in VLC.</p>
+              <img src="assets/images/video-synch/SAGE2Shoot.jpg" alt="" class="img-fluid">
+              <p>Video running without solution in SAGE-2.</p>
+              <img src="assets/images/video-synch/Solution3.png" alt="" class="img-fluid">
+              <p>Video with solution.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PAMIN -->
+    <div class="mh-portfolio-modal" id="pamin-mh">
+      <div class="container">
+        <div class="row mh-portfolio-modal-inner">
+          <div class="col-sm-5">
+            <h2>PAMIN</h2>
+            <p>2013 - 2015</p>
+            <p>
+              Patrimony, Memory and Interactivity as it was called PAMIN it had the idea of save, identify and
+              share cultural patrimony, artistics location and cultural events from cities in Brazil (initially in João Pessoa)
+              where it was not known by most of people at all using technology to create that. 
+            </p>
+            <p>
+              The base idea it was pretty much using google maps to show/share places considering touristic points, 
+              monuments, regional restaurants and much more in a manner to create a collaborative enviroment.
+              Furthermore, the first version application it was developed using Web JAVA and later on at version 2,
+              upgraded to Ruby on Rails.   
+            </p>
+            <div class="mh-about-tag">
+              <ul>
+                <li><span>Google maps api</li></span>
+                <li><span>Ruby on Rails</li></span>
+                <li><span>Html</li></span>
+                <li><span>Css</li></span>
+                <li><span>JQuery</li></span>
+                <li><span>JavaScript</li></span>
+                <li><span>JBoss</li></span>
+                <li><span>JAVA</li></span>
+                <li><span>JSF</li></span>
+                <li><span><a href="https://sage2.sagecommons.org/tag/wall/">SAGE2</a></li></span>
+              </ul>
+            </div>
+            <p>The website is not available anymore.</p>
+          </div>
+          <div class="col-sm-7">
+            <div class="mh-portfolio-modal-img">
+              <img src="assets/images/pamin/website.png" alt="portal docs website" class="img-fluid">
+              <p>PAMIN web.</p>
             </div>
           </div>
         </div>
